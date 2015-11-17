@@ -61,13 +61,6 @@ static inline int scm_call(u32 svc_id, u32 cmd_id, const void *cmd_buf,
 	return 0;
 }
 
-static inline int scm_call_noalloc(u32 svc_id, u32 cmd_id,
-		const void *cmd_buf, size_t cmd_len, void *resp_buf,
-		size_t resp_len, void *scm_buf, size_t scm_buf_size)
-{
-	return 0;
-}
-
 static inline s32 scm_call_atomic1(u32 svc, u32 cmd, u32 arg1)
 {
 	return 0;
